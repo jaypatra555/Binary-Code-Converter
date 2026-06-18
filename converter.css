@@ -18,10 +18,10 @@ main{
 }
 
 header{
-    height: 2vh;
+    height: 5vh;
 }
 
-.back-button-box{
+/* .back-button-box{
     width: 100%;
 } 
 .back-button{
@@ -38,7 +38,7 @@ header{
 
 #logo{
     background-color: transparent;
-}
+} */
 
 .main-calculator{
     display: flex;
