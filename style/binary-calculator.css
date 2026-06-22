@@ -22,7 +22,7 @@ body{
     flex-direction: column;
     align-items: center;
     flex: 1;
-    margin-bottom:5vh ;
+    margin-bottom:5dvh ;
 
 }
 
@@ -70,13 +70,13 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 2vh;
+    margin-top: 2dvh;
     margin-left: 3vw;
     font-size: 30px;
 }
 
 .main-calculator{
-    margin-top:2vh;
+    margin-top:2dvh;
     background-color: white;
     width: 90vw;
     display: flex;
@@ -85,9 +85,9 @@ h1{
     flex: 1;
 }
 #display{
-    height:15vh;
+    height:15dvh;
     width: 80vw;
-    margin-top:3vh;
+    margin-top:3dvh;
     font-size: 14vw;
     text-align:right;
     background-color: whitesmoke;
@@ -99,7 +99,7 @@ h1{
 #result{
     height:15vw ;
     width:80vw;
-    margin-top:5vh;
+    margin-top:5dvh;
     border: 2px solid black;
     font-size: 7vw;
     display: flex;
@@ -140,8 +140,8 @@ h1{
     
 }
 .opperators{
-    width:11vh;
-    height: 11vh;
+    width:11dvh;
+    height: 11dvh;
     border-radius: 50%;
     background-color: transparent;
     box-shadow:3px 5px 10px rgb(41, 4, 252);
@@ -151,7 +151,7 @@ h1{
 }
 
 #ac-del-button{
-    font-size:5vh ;
+    font-size:5dvh ;
 }
 .opperators:hover{
     box-shadow: inset 0px 0px 20px blue;
