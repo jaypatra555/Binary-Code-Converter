@@ -1,3 +1,8 @@
+function goBack(){
+    window.history.back();
+}
+
+
 let input = document.getElementById("input");
 let from = document.getElementById("from");
 let to = document.getElementById("to");
@@ -194,7 +199,10 @@ updateButtons();
 
 function addToDisplay(value) {
     input.value += value;
+    input.scrollLeft = input.scrollWidth;//likha besi hole dandike scroll hobe
     convert();
+
+    result.scrollLeft = result.scrollWidth;//likha besi hole dandike scroll hobe
 }
 
 function del() {

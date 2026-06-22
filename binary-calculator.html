@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Calculator</title>
+    <link rel="stylesheet" href="style/binary-calculator.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+    
+    <!-- binary calculator -->
+
+    <div class="main-container">
+
+     <div class="navbar">
+        <h1>
+            Binary  Calculator
+        </h1>
+
+        <div class="creater">
+            <p class="firstp">Create By</p>
+            <p class="secondp">JP</p>
+        </div>
+
+     </div>
+
+     <!-- back switch -->
+    <div class="back-box">
+        <button class="back-button" onclick="goBack()">
+            <i class="fa-solid fa-arrow-left"></i>
+        </button>
+    </div>
+
+      <div class="main-calculator">
+
+         <div>
+            <input type="text" id="display" readonly>
+         </div>
+
+         <div id="result">        
+
+         </div>
+
+         <div class="all-opperators">
+
+            <div class="first-row">
+                <button class="opperators" id="ac-del-button" onclick="clearDisplay()">AC</button>
+                <button class="opperators" id="ac-del-button" onclick="del()">Del</button>
+                <button class="opperators" onclick="addToDisplay('/')">÷</button>
+            </div>
+
+            <div class="second-row">
+                <button class="opperators" onclick="addToDisplay('0')">0</button>
+                <button class="opperators" onclick="addToDisplay('1')">1</button>
+                <button class="opperators" onclick="addToDisplay('*')">×</button>
+            </div>
+
+            <div class="third-row">
+                <button class="opperators" onclick="addToDisplay('+')">+</button>
+                <button class="opperators" onclick="addToDisplay('-')">-</button>
+                <button class="opperators" onclick="calculate()">=</button>
+            </div>
+         </div>
+
+     </div>
+
+    </div>
+
+    <script src="script/binary-calculator.js"></script>
+</body>
+</html>

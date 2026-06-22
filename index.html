@@ -3,124 +3,547 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>converter</title>
-    <link rel="stylesheet" href="converter.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <title>Binary Calculator & Converter</title>
+    <link rel="stylesheet" href="style/index.css">
 </head>
 <body>
 
-    <header></header>
+    <header class="header">
 
-    <main>
-
-        <!-- back button
-        <div class="back-button-box">
-            <button class="back-button"  onclick="goBack()">
-            <i id="logo" class="fa-solid fa-arrow-left"></i>
-            </button>
-        </div> -->
-
-
-
-        <!-- main calculator -->
-        <div class="main-calculator">
-
-            <!-- input and result section -->
-            <div class="input-result-box">
-                <!-- number input section -->
-
-                <div class="from-input">
-                    <div class="from-box">
-                        <label>From:</label>
-
-                        <select id="from">
-                            <option value="binary">Binary</option>
-                            <option value="decimal">Decimal</option>
-                            <option value="octal">Octal</option>
-                            <option value="bcd">BCD</option>
-                            <option value="gray">Gray Code</option>
-                            <option value="hexadecimal">Hexadecimal</option>
-                        </select>
-                    
-                    </div>
-                    
-                    <input type="text" id="input" placeholder="Enter Number" readonly>
-                
-                </div>
-
-                <!-- result section -->
-
-                <div>
-                
-                    <div class="to-box">
-                        <label>To:</label>
-                    
-
-                        <select id="to">
-                            <option value="decimal">Decimal</option>
-                            <option value="binary">Binary</option>
-                            <option value="octal">Octal</option>
-                            <option value="bcd">BCD</option>
-                            <option value="gray">Gray Code</option>
-                            <option value="hexadecimal">Hexadecimal</option>
-                        </select>
-
-                    </div>
-                    
-                    <input type="text" id="result" placeholder="RESULT" readonly>
-
-                </div>
-
-            </div>
-
-            <!-- button section -->
-            <div class="button-box">
-
-                <!-- first button row  -->
-
-                <div class="button-row">
-                    <button class="key" onclick="addToDisplay('A')">A</button>
-                    <button class="key" onclick="addToDisplay('B')">B</button>
-                    <button class="key" onclick="addToDisplay('C')">C</button>
-                    <button class="key" onclick="addToDisplay('D')">D</button>
-                </div>
-                <!-- second button row  -->
-
-                <div class="button-row">
-                    <button class="key" onclick="addToDisplay('9')">9</button>
-                    <button class="key" onclick="addToDisplay('8')">8</button>
-                    <button class="key" onclick="addToDisplay('7')">7</button>
-                    <button class="key" onclick="addToDisplay('E')">E</button>
-                </div>
-                <!-- third button row  -->
-
-                <div class="button-row">
-                    <button class="key" onclick="addToDisplay('6')">6</button>
-                    <button class="key" onclick="addToDisplay('5')">5</button>
-                    <button class="key" onclick="addToDisplay('4')">4</button>
-                    <button class="key" onclick="addToDisplay('F')">F</button>
-                </div>
-                <!-- fourth button row  -->
-
-                <div class="button-row">
-                    <button class="key" onclick="addToDisplay('3')">3</button>
-                    <button class="key" onclick="addToDisplay('2')">2</button>
-                    <button class="key" onclick="addToDisplay('1')">1</button>
-                    <button class="key" onclick="addToDisplay('0')">0</button>
-                </div>
-
-                <!-- fifth button row  -->
-                <div class="button-row">
-                    <button class="last-row" onclick="del()">Del</button>
-                    <button class="last-row" onclick="allClear()">AC</button>
-                </div>
-
-            </div>
+        <!-- navbar -->
+        <div class="navbar">
+            <h1>Binary calculator & Converter</h1>
         </div>
+    </header>
+
+    <main class="main">
+
+        <!-- paragraph -->
+        <div class="para-box">
+            <p class="pare-description">
+                Calculate & Convert any Binary,Decimal,Octal,BCD,Graycode and Hexadecimal Number easily.
+            </p>
+        </div>
+
+        <!-- converter box -->
+        <div class="converter-box">
+            <a class="converter-link" href="converter.html">CONVERTER</a>
+        </div>
+
+        <!-- calculator -->
+        <div class="calculator-box">
+            <details class="details-box">
+              <summary class="summary-heading" >CALCULATOR</summary>
+
+              <!-- all calculator -->
+              <div class="link-box">
+                    <a class="calculator-link" href="all-in-one-calculator.html">All in one Calculator</a>
+                    <a class="calculator-link" href="binary-calculator.html">Binary Calculator</a>
+                    <a class="calculator-link" href="">Octal Calculator</a>
+                    <a class="calculator-link" href="">BCD Calculator</a>
+                    <a class="calculator-link" href="">Graycode Calculator</a>
+                    <a class="calculator-link" href="">xs-3 Calculator</a>
+                    <a class="calculator-link" href="">Hexadecimal Calculator</a>
+              </div>
+            </details>
+        </div>
+
+        <!-- Features box -->
+        <div class="features-box">
+
+            <h5>Features</h5>
+
+            <ul class="features-ul">
+                <li class="feature-list">
+                   <span class="feature-text"> 🆓100% Free : </span> Use all features without any cost or subscription
+                </li>
+                <li class="feature-list">
+                    <span class="feature-text">🚫 Ad-Free Experience : </span> Enjoy a clean interface with no distration advertisements
+                </li>
+
+                <li class="feature-list">
+                    <span class="feature-text">⚡ Easy to Use : </span> Simple and user-friendly deign for quick and effortless conversions.
+                </li>
+
+            </ul>
+        </div>
+
+        <!-- about Binary,Decimal,Octal,BCD,Graycode,Hexadecimal -->
+        <div class="about-box">
+
+            <h5 class="about-box-heading">About</h5>
+
+            <details class="about-details-box">
+                <summary class="about-heading">Decimal Number System</summary>
+                <div class="about-written">
+                    <br><br>
+
+                    The Decimal Number System is the most widely used numerical system in everyday life. It uses ten digits: 0, 1, 2, 3, 4, 5, 6, 7, 8, and 9 and is therefore known as the Base-10 Number System. <br><br>
+
+                    In the decimal system, the value of each digit depends on its position. Each position represents a power of 10 (10⁰, 10¹, 10²,                     10³, ...).<br><br>
+
+                    <b>Example:</b><br>
+
+                    Decimal: 345₁₀<br><br>
+
+                    <b>Calculation:</b><br>
+
+                    345₁₀ = (3 × 10²) + (4 × 10¹) + (5 × 10⁰)<br>
+                    = 300 + 40 + 5<br>
+                    = 345<br><br>
+
+                    <b>Applications of Decimal</b><br><br>
+                    •Used in everyday counting and calculations.<br>
+                    •Used in banking, finance, and accounting systems.<br>
+                    •Used in business transactions and commerce.<br>
+                    •Used in scientific and mathematical calculations.<br>
+                    •Used in education and learning mathematics.<br>
+                    •Used for measurements such as length, weight, temperature, and time.<br>
+                    •Used as the standard number system for humans worldwide.<br>
+                    •Used in calculators, spreadsheets, and data analysis.<br><br>
+
+                    The Decimal Number System is the standard numerical system used by humans because it is simple, efficient, and easy to understand.It serves as the foundation for most mathematical operations and daily numerical activities.
+
+
+
+                </div>
+                <br>
+            </details>
+            <details class="about-details-box">
+                <summary class="about-heading">Binary Number System</summary>
+                <div class="about-written">
+                    <br>
+
+                    The Binary Number System is a numerical system that uses only two digits: 0 and 1 . It is also known as the Base-2 Number System . Binary is the fundamental language of computers and digital devices because electronic circuits can easily represent two states: ON (1) and OFF (0). Each digit in a binary number is called a bit (binary digit) . The value of each position in a binary number is based on powers of 2 (2⁰, 2¹, 2², 2³, ...).
+                    <br><br>
+
+                    <b>Example:</b> <br>
+                    Binary: 1010₂ <br>
+                    Decimal: 10₁₀ <br><br>
+
+                    <b>Calculation:</b> <br>
+                    1010₂ = (1 × 2³) + (0 × 2²) + (1 × 2¹) + (0 × 2⁰) <br>
+                    = 8 + 0 + 2 + 0 <br>
+                    = 10₁₀ <br><br>
+
+                    <b>Applications of Binary</b><br><br>
+                    •Used by computers to process and store data.<br>
+                    •Used in digital electronics and logic circuits.<br>
+                    •Used for data communication and networking.<br>
+                    •Used to represent text, images, audio, and video in digital form.<br>
+                    •Used in microprocessors, memory devices, and embedded systems.<br>
+                    •Used in programming and computer architecture.<br>
+                    •Used in modern technologies such as smartphones, calculators, and digital cameras.<br><br>
+
+                    Because of its simplicity and reliability, the binary number system forms the foundation of all modern computing systems. <br>
+
+                </div>
+                <br>
+            </details>
+            <details class="about-details-box">
+                <summary class="about-heading">Octal Number System</summary>
+                <div class="about-written">
+                    <br>
+                    The Octal Number System is a numerical system that uses eight digits: 0, 1, 2, 3, 4, 5, 6, and 7. It is also known as the Base-8 Number System. In octal, each digit position represents a power of 8 (8⁰, 8¹, 8², 8³, ...).
+                    Octal is closely related to the Binary Number System because each octal digit can be represented by exactly three binary digits(bits) . This makes octal useful for simplifying long binary numbers.
+                    <br><br>
+
+                    <b>Example:</b> <br>
+                    Octal: 157₈<br>
+                    Decimal: 111₁₀<br><br>
+
+                    <b>Calculation:</b> <br>
+                    157₈ = (1 × 8²) + (5 × 8¹) + (7 × 8⁰)<br>
+                    = 64 + 40 + 7<br>
+                    = 111₁₀<br>
+
+                    <b>Applications of Octal</b> <br><br>
+                    •Used as a compact representation of binary numbers.<br>
+                    •Used in early computer systems and digital electronics.<br>
+                    •Used in computer programming and assembly language.<br>
+                    •Used in some operating systems for file permissions.<br>
+                    •Used in embedded systems and microcontrollers.<br>
+                    •Used in digital communication systems.<br>
+                    •Used for simplifying binary calculations and conversions.<br>
+                    •Used in computer science education to teach number systems.<br><br>
+
+                    Although octal is less common today than hexadecimal, it remains an important number system in computer science and digital electronics due to its close relationship with binary numbers. <br>
+
+                </div>
+                <br>
+            </details>
+            <details class="about-details-box">
+                <summary class="about-heading">Gray Code Number System</summary>
+                <div class="about-written">
+                    <br>
+
+                    Gray Code is a special binary numbering system in which only one bit changes at a time between two consecutive numbers. It is also known as the Reflected Binary Code. Unlike normal binary numbers, Gray Code is designed to reduce errors that can occur during transitions from one value to <br><br>
+                    Because only a single bit changes between adjacent values, Gray Code is widely used in digital systems where accuracy and reliability are important. <br><br>
+
+                    <b>Example :</b>
+
+                    <div class="tabel-box">
+
+                    <table border="1" class="graycode-tabel">
+                        <tr>
+                            <th>Decimal</th>
+                            <th>Binary</th>
+                            <th>GrayCode</th>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>000</td>
+                            <td>000</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>001</td>
+                            <td>001</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>010</td>
+                            <td>011</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>011</td>
+                            <td>010</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>100</td>
+                            <td>110</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>101</td>
+                            <td>111</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>110</td>
+                            <td>101</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>111</td>
+                            <td>100</td>
+                        </tr>
+                    </table>
+                    </div>
+                    <br>
+
+                    <b>Notice: </b> That only one bit changes between consecutive Gray Code values. <br><br>
+
+                    <b>Applications of Gray Code</b><br><br>
+
+                    •Used in rotary and position encoders.<br>
+                    •Used in digital communication systems.<br>
+                    •Used in error reduction during signal transmission.<br>
+                    •Used in analog-to-digital converters (ADCs).<br>
+                    •Used in Karnaugh Maps (K-Maps) for logic simplification.<br>
+                    •Used in digital circuit design.<br>
+                    •Used in mechanical sensors and motion control systems.<br>
+                    •Used in robotics and industrial automation.<br>
+                    •Used in computer science and electronics education.<br><br>
+
+                    Gray Code is important because it minimizes errors caused by multiple bits changing simultaneously, making digital systems more reliable and accurate.
+                </div>
+                <br>
+            </details>
+            <details class="about-details-box">
+                <summary class="about-heading">XS-3 Number System</summary>
+                <div class="about-written">
+                    <br><br>
+                    Excess-3 (XS-3) is a non-weighted Binary Coded Decimal (BCD) code . It is obtained by adding 3 to each decimal digit and then converting the result into a 4-bit binary number . <br><br>
+
+                    <div class="xs-tabel-box">
+                    <table border="1" class="xs-tabel">
+                        <thead><b>XS-3 Tabel</b></thead>
+                        <br>
+                        <tr>
+                            <th>Decimal</th>
+                            <th>XS-3</th>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>0011</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>0100</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>0101</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>0110</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>0111</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>1000</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>1001</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>1010</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>1011</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>1100</td>
+                        </tr>
+                    </table>
+                    </div>
+                    <br><br>
+
+                    <b>Example:</b> <br>
+                    Decimal 15 <br>
+                    •1 + 3 = 4 → 0100<br>
+                    •5 + 3 = 8 → 1000<br><br>
+
+                    XS-3 = 0100 1000<br><br>
+
+                    <b>Uses of XS-3</b><br><br>
+                    •Represents decimal numbers in digital systems.<br>
+                    •Simplifies certain arithmetic operations.<br>
+                    •Helps in error detection and correction techniques.<br>
+                    •Used in digital electronics and computer systems.<br><br>
+
+                    <b>Advantages</b><br><br>
+
+                    •Self-complementing code.<br>
+                    •Easy conversion between decimal and XS-3.<br>
+                    •Useful in digital arithmetic circuits.<br><br>
+
+                </div>
+                <br>
+            </details>
+            <details class="about-details-box">
+                <summary class="about-heading">BCD Number System</summary>
+                <div class="about-written">
+                    <br>
+
+                    Binary Coded Decimal (BCD) is a number system in which each decimal digit (0–9) is represented by its own 4-bit binary code . Instead of converting the entire number into binary, each decimal digit is encoded separately. <br><br>
+
+                    <div class="bcd-tabel-box">
+                    <table border="1" class="bcd-tabel">
+                        <thead><b>BCD Tabel</b></thead>
+                        <br>
+                        <tr>
+                            <th>Decimal</th>
+                            <th>XS-3</th>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>0000</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>0001</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>0010</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>0011</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>0100</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>0101</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>0110</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>0111</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>1000</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>1001</td>
+                        </tr>
+                    </table>
+                    </div>
+                    <br><br>
+
+                    <b>Example:</b> <br><br>
+
+                    Decimal 25<br>
+                    •2 → 0010<br>
+                    •5 → 0101<br>
+                    <b>BCD</b> = 0010 0101<br><br>
+
+                    <b>Uses of BCD</b><br>
+                    •Used in digital clocks and calculators.<br>
+                    •Common in financial and commercial applications.<br>
+                    •Simplifies displaying decimal numbers on seven-segment displays<br>.
+                    •Used in digital electronic systems that require accurate decimal representation.<br><br>
+                    <b>Advantages</b><br>
+                    •Easy conversion between decimal and BCD.<br>
+                    •Accurate representation of decimal digits.<br>
+                    •Convenient for displaying numerical data.<br><br>
+
+                </div>
+            </details>
+            <details class="about-details-box">
+                <summary class="about-heading">Hexadecimal Number System</summary>
+                <div class="about-written">
+                    <br>
+                    The Hexadecimal Number System is a base-16 number system that uses sixteen symbols: 0–9 and A–F . It is widely used in computing because it provides a compact way to represent binary data. <br> <br>
+
+                    <div class="hex-tabel-box">
+                    <table border="1" class="hex-tabel">
+                        <thead><b>Hexadecimal Tabel</b></thead>
+                        <br>
+                        <tr>
+                            <th>Decimal</th>
+                            <th>Hexadecimal</th>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>A</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>B</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>C</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>D</td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>E</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>F</td>
+                        </tr>
+                    </table>
+                    </div>
+                    <br><br>
+
+                    <b>Example:</b><br><br>
+                    <b>Decimal 255 </b><br>
+
+                    •255 ÷ 16 = 15 remainder 15<br>
+                    •15 = F<br>
+                    •15 = F<br>
+
+                    <b>Hexadecimal</b> = FF<br><br>
+
+                    <b>Uses of Hexadecimal</b><br>
+                    •Used to represent binary data in a shorter form.<br>
+                    •Commonly used in computer programming.<br>
+                    •Used for memory addresses and machine code.<br>
+                    •Used in web design for color codes (e.g., #FF0000 for red).<br>
+                    •Used in networking and digital electronics.<br><br>
+                    <b>Advantages</b><br>
+                    •More compact than binary.<br>
+                    •Easy conversion between hexadecimal and binary.<br>
+                    •Widely supported in computer systems.<br>
+                    •Makes large binary numbers easier to read and write.<br>
+
+                </div>
+            </details>
+        </div>
+        <hr>
+
+        <form class="comment-box">
+            <fieldset>
+                <legend>Share Your Comments</legend>
+
+                <label>Name (optional)</label>
+                <input class="name-input" type="text" placeholder="Your name">
+
+                <label>Comment</label>
+                <textarea class="comment-textarea" placeholder="Your comment"></textarea>
+
+                <button class="send-button">Send</button>
+            </fieldset>
+        </form>
 
     </main>
 
+    <!-- footer bar -->
+    <footer class="footer">
 
-<script src="converter.js"></script>
+        <div class="footer-box">
+            <!-- contact button -->
+            <a class="footer-bar-link" href="">CONTACT</a>
+
+            <!-- How To Use button -->
+            <a class="footer-bar-link" href="">How to Use</a>
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,278 @@
+@media(max-width:450px){
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    position: fixed;
+    top:0px;
+    width: 100vw;
+}
+
+.navbar{
+    height: 5vh;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-size: 3vh;
+    text-align: center;
+}
+main{
+    width: 100vw;
+    margin-top: 5vh;
+    margin-bottom: 8vh;
+
+}
+.para-box{
+    width: 100vw;
+    margin-top: 3vh;
+}
+.pare-description{
+    font-size: 6vw;
+    text-align: center;
+    color: red;
+}
+
+.converter-box{
+    margin-top: 3vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.converter-link{
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 5px;
+    font-size:10vw;
+    font-weight: 600;
+    color: #551A8B;
+}
+
+.details-box{
+    margin-top: 3vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.summary-heading{
+    font-size: 10vw;
+    font-weight: 600;
+    border: 2px solid black;
+    padding: 5px;
+    color: #551A8B;
+
+}
+
+.link-box{
+    display: flex;
+    flex-direction: column;
+}
+
+.calculator-link{
+    text-decoration: none;
+    color: black;
+    font-size: 7vw;
+    margin-top: 1.5vh;
+    border: 1px solid black;
+    padding: 5px;
+
+}
+
+.features-box{
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+    border: 1px solid rgb(196, 191, 191);
+
+}
+h5{
+    font-size: 8vw;
+    color: #0000ff;
+}
+
+.features-ul{
+    width: 90vw;
+}
+.feature-text{
+    font-weight: bold;
+    font-size:6vw ;
+}
+.feature-list{
+    font-size: 5vw;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0px;
+
+}
+.footer-box{
+    width: 100vw;
+    height: 5vh;
+    background-color:whitesmoke;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer-bar-link{
+    font-size: 2.5vh;
+    text-decoration: none;
+    border: 1px solid black;
+    color: black;
+    padding:0.5vh;
+    border-radius: 2vh;
+}
+
+.about-box{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: whitesmoke;
+    padding-bottom:2vh;
+}
+.about-box-heading{
+    font-size: 12vw;
+}
+
+.about-heading{
+    font-size:6vw;
+    margin-top: 1vh;
+}
+.about-details-box{
+    width: 90vw;
+}
+.about-written{
+    font-size: 5vw;
+}
+
+.tabel-box{
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+}
+
+.graycode-tabel{
+    border: 1px solid black;
+    width: 90vw;
+    text-align: center;
+
+}
+
+.xs-tabel-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.xs-tabel{
+    width: 80vw;
+    text-align: center;
+
+}
+.bcd-tabel-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bcd-tabel{
+    width: 80vw;
+    text-align: center;
+
+}
+.hex-tabel-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hex-tabel{
+    width: 80vw;
+    text-align: center;
+
+}
+
+.comment-box{
+    background-color:#e1ff8cdb;
+    padding:20px;
+    margin-top: 3vh;
+}
+
+fieldset{
+    border:3px solid #aaa;
+    padding-left: 8vw;
+    border-radius: 5vw;
+}
+
+legend{
+    font-size:5vw;
+    font-weight:bold;
+    padding:0 8px;
+}
+
+label{
+    display:block;
+    font-size:6vw;
+    font-weight:bold;
+    margin-bottom:1vh;
+    margin-top: 2vh;
+}
+.name-input{
+    height: 4vh;
+    width: 65vw;
+    font-size: 6vw;
+    border-radius: 3vw;
+    background-color: white;
+    padding-left: 2vw;
+    border: 1px solid black;
+    font-family:'Courier New', Courier, monospace;
+}
+.comment-textarea{
+    resize: none;
+    height: 12vh;
+    width: 72vw;
+    border: 3px solid black;
+    background-color: white;
+    border-radius: 4vw;
+    font-size: 4vw;
+    padding-top: 1vh;
+    padding-left: 2vw;
+    
+
+}
+
+.comment-textarea::placeholder{
+    font-size: 6vw;
+    font-family:'Courier New', Courier, monospace;
+
+}
+.send-button{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    padding: .5vh 4vw;
+    font-size: 10vw;
+    border: 1px solid black;
+    background-color: rgb(92, 176, 3);
+    border-radius: 3vw;
+    color: white;
+}
+.send-button:hover{
+    color: black;
+    background-color:rgb(197, 238, 136) ;
+}
+
+
+}

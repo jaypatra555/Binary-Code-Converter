@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>converter</title>
+    <link rel="stylesheet" href="style/converter.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+
+    <header></header>
+
+    <main>
+
+        <!-- back button -->
+        <div class="back-button-box">
+            <button class="back-button"  onclick="goBack()">
+            <i id="logo" class="fa-solid fa-arrow-left"></i>
+            </button>
+        </div>
+
+
+
+        <!-- main calculator -->
+        <div class="main-calculator">
+
+            <!-- input and result section -->
+            <div class="input-result-box">
+                <!-- number input section -->
+
+                <div class="from-input">
+                    <div class="from-box">
+                        <label>From:</label>
+
+                        <select id="from">
+                            <option value="binary">Binary</option>
+                            <option value="decimal">Decimal</option>
+                            <option value="octal">Octal</option>
+                            <option value="bcd">BCD</option>
+                            <option value="gray">Gray Code</option>
+                            <option value="hexadecimal">Hexadecimal</option>
+                        </select>
+                    
+                    </div>
+                    
+                    <input type="text" id="input" placeholder="Enter Number" readonly>
+                
+                </div>
+
+                <!-- result section -->
+
+                <div>
+                
+                    <div class="to-box">
+                        <label>To:</label>
+                    
+
+                        <select id="to">
+                            <option value="decimal">Decimal</option>
+                            <option value="binary">Binary</option>
+                            <option value="octal">Octal</option>
+                            <option value="bcd">BCD</option>
+                            <option value="gray">Gray Code</option>
+                            <option value="hexadecimal">Hexadecimal</option>
+                        </select>
+
+                    </div>
+                    
+                    <input type="text" id="result" placeholder="RESULT" readonly>
+
+                </div>
+
+            </div>
+
+            <!-- button section -->
+            <div class="button-box">
+
+                <!-- first button row  -->
+
+                <div class="button-row">
+                    <button class="key" onclick="addToDisplay('A')">A</button>
+                    <button class="key" onclick="addToDisplay('B')">B</button>
+                    <button class="key" onclick="addToDisplay('C')">C</button>
+                    <button class="key" onclick="addToDisplay('D')">D</button>
+                </div>
+                <!-- second button row  -->
+
+                <div class="button-row">
+                    <button class="key" onclick="addToDisplay('9')">9</button>
+                    <button class="key" onclick="addToDisplay('8')">8</button>
+                    <button class="key" onclick="addToDisplay('7')">7</button>
+                    <button class="key" onclick="addToDisplay('E')">E</button>
+                </div>
+                <!-- third button row  -->
+
+                <div class="button-row">
+                    <button class="key" onclick="addToDisplay('6')">6</button>
+                    <button class="key" onclick="addToDisplay('5')">5</button>
+                    <button class="key" onclick="addToDisplay('4')">4</button>
+                    <button class="key" onclick="addToDisplay('F')">F</button>
+                </div>
+                <!-- fourth button row  -->
+
+                <div class="button-row">
+                    <button class="key" onclick="addToDisplay('3')">3</button>
+                    <button class="key" onclick="addToDisplay('2')">2</button>
+                    <button class="key" onclick="addToDisplay('1')">1</button>
+                    <button class="key" onclick="addToDisplay('0')">0</button>
+                </div>
+
+                <!-- fifth button row  -->
+                <div class="button-row">
+                    <button class="last-row" onclick="del()">Del</button>
+                    <button class="last-row" onclick="allClear()">AC</button>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+
+
+    <!-- 
+        <button class="key">0</button>
+
+        <button class="key">1</button>
+        <button class="key">2</button>
+        <button class="key">F</button> -->
+
+    
+
+
+
+
+
+<script src="script/converter.js"></script>
+</body>
+</html>
