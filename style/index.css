@@ -153,6 +153,7 @@ h5{
 .about-heading{
     font-size:6vw;
     margin-top: 1vh;
+    font-weight:700;
 }
 .about-details-box{
     width: 90vw;
@@ -206,7 +207,7 @@ h5{
 }
 
 .comment-box{
-    background-color:#e1ff8cdb;
+    background-color:#eaffaddb;
     padding:20px;
     margin-top: 3vh;
 }
