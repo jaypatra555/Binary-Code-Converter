@@ -523,12 +523,12 @@
                 <legend>Share Your Comments</legend>
 
                 <label>Name (optional)</label>
-                <input class="name-input" type="text" placeholder="Your name">
+                <input class="name-input" id="name" type="text" placeholder="Your name">
 
                 <label>Comment</label>
-                <textarea class="comment-textarea" placeholder="Your comment"></textarea>
+                <textarea class="comment-textarea" id="comment" placeholder="Your comment"></textarea>
 
-                <button class="send-button">Send</button>
+                <button type="button" class="send-comment" onclick="sendComment()">Send</button>
             </fieldset>
         </form>
 
@@ -545,5 +545,8 @@
             <a class="footer-bar-link" href="how-to-use.html">How to Use</a>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </body>
+<script src="script/index.js"></script>
 </html>
